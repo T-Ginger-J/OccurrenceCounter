@@ -43,7 +43,7 @@ public class OccurrenceCounter {
     }
 
     //counts a character in an array
-    public int singleCharCounter (char c) {
+    public int countSingleChar (char c) {
         int count = 0;
         for (int i = 0; i < arr.length; i++){
             if (arr[i] == c)
