@@ -25,4 +25,28 @@ public class CounterTest {
         assertTrue(testCounter.countArr[3] == 3);
     }
 
+    @Test
+    public void NodeEdgeCoverageTest2(){
+        char[] array = {'a', 'x'};
+        OccurrenceCounter testCounter = new OccurrenceCounter(array);
+        int count = testCounter.countSingleChar('a');
+        assertTrue(count == 1);
+    }
+
+    @Test
+    public void EmptyPathCoverageTest2() {
+        char[] array = { };
+        OccurrenceCounter testCounter = new OccurrenceCounter(array);
+        int count = testCounter.countSingleChar('c');
+        assertTrue(count == 0);
+    }
+
+    @Test
+    public void PrimePathCoverageTest2(){
+        char[] array = {'a', 'a', 'b', 'b'};
+        OccurrenceCounter testCounter = new OccurrenceCounter(array);
+        int count = testCounter.countSingleChar('b');
+        assertTrue(count == 2);
+    }
+    
 }
