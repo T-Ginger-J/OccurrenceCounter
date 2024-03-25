@@ -42,5 +42,15 @@ public class OccurrenceCounter {
         return countArr;
     }
 
+    //counts a character in an array
+    public int singleCharCounter (char c) {
+        int count = 0;
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] == c)
+                count++;
+        }
+        return count;
+    }
+
 }
 
